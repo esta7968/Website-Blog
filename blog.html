@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-image: url('https://mediaim.expedia.com/destination/1/254a1fa7846c3ff537ff48dc7575ffc9.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        section {
+            padding: 20px;
+            margin: 0 10%;
+            background: rgba(255, 255, 255, 0.8); /* Slightly transparent white for legibility */
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7); /* Dark overlay for better text visibility */
+            color: #fff;
+            padding-top: 10px;
+            min-height: 70px;
+            border-bottom: 3px solid #4CAF50; /* Green accent */
+        }
+        header h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+        /* Main content */
+        img {
+            padding: auto;
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: auto;
+        }
+        .swiper-slide img {
+            width: 300px;
+            height: 200px;
+        }
+       
+        footer {
+            background: rgba(0, 0, 0, 0.7); /* Matching the header with a dark overlay */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 3px solid #4CAF50; /* Green accent */
+        }
+        footer ul {
+            padding: 0;
+        }
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        /* Back to Top Button */
+        #back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #4CAF50; /* Green accent */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: none;
+        }
+       
+        /* Popup Styles */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            z-index: 1000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+  
+        /* Styles for overlay */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        /* Button styles */
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #1c6715;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Discover Nigeria</h1>
+    <nav>
+        <ul>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="blogpost.html">Blog</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="jj.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Welcome to My Travel Blog</h2>
+    <p>Welcome to my travel blog focused on Nigeria! Explore the diverse culture, stunning landscapes, and rich history of this beautiful country</p>
+</section>
+
+<section id="about">
+    <h2>About Nigeria</h2>
+    <p>Nigeria, located in West Africa, is the most populous country on the African continent. It is known for its vibrant culture, diverse ethnic groups, and bustling cities.</p>
+    <p>From the bustling streets of Lagos to the scenic landscapes of Jos Plateau, Nigeria offers a wide range of experiences for travelers.</p>
+</section>
+
+<section class="featured-destinations">
+    <h2>Featured Destination: Abuja</h2>
+    <!-- Slideshow container -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="https://mediaim.expedia.com/destination/1/254a1fa7846c3ff537ff48dc7575ffc9.jpg" alt="Slide 1"></div>
+            <!-- Add more slides as needed -->
+            <div class="swiper-slide"><img src="https://i0.wp.com/media.premiumtimesng.com/wp-content/files/2020/05/abuja-1589282102432.jpg?fit=750%2C496&ssl=1" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="https://media.premiumtimesng.com/wp-content/files/2015/03/Wonder-Land-Abuja-Travelers-List-Expectation-e1425554351827.jpg" alt="Slide 3"></div>
+        </div>
+        <!-- Add pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Slideshow script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+    <!-- End of slideshow script -->
+    <p>Explore the modern capital city of Nigeria, Abuja. From its stunning architecture to its vibrant culture, Abuja offers a unique travel experience.</p>
+</section>
+<section id="blog">
+    <h2>Explore Nigeria Through My Blog</h2>
+    <p>Stay tuned for exciting blog posts about my adventures in Nigeria, including:</p>
+    <ul>
+        <li>Exploring the vibrant markets of Lagos</li>
+        <li>Discovering the ancient city of Benin</li>
+        <li>Adventuring through the lush rainforests of Cross River State</li>
+        <li>Experiencing the rich traditions of the Yoruba and Igbo people</li>
+    </ul>
+</section>
+
+<footer id="contact">
+    <!-- Contact details and social media links -->
+    <ul>
+        <li><a href="https://facebook.com/yourprofile"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://instagram.com/esta_o.a"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+    <p>© 2024 Waka Waka Padi. All Rights Reserved.</p>
+</footer>
+
+<!-- Popup Modal -->
+<div class="overlay" id="overlay"></div>
+
+    <div class="popup" id="popup">
+        <h2 style="color: #4CAF50;">Sign up for our blog!</h2>
+        <p>Stay updated with the latest articles and news.</p>
+        <button onclick="redirectToSignUp()">Sign Up</button>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+<script>
+  // Function to display the pop-up
+  function showPopup() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+  }
+
+  // Function to close the pop-up
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+  }
+
+  // Function to redirect to the sign-up page
+  function redirectToSignUp() {
+    window.location.href = "signup.html"; // Change this to your sign-up page URL
+  }
+
+  // Show the pop-up after 5 seconds
+  setTimeout(showPopup, 5000);
+</script>
+
+</body>
+</html>

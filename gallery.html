@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-image: url('https://mediaim.expedia.com/destination/1/254a1fa7846c3ff537ff48dc7575ffc9.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: 3px solid #4CAF50;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+
+        section {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gallery {
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery:hover {
+            transform: scale(1.5);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 10px 10px 0 0;
+        }
+
+        figcaption {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            color: #fff; /* White text color */
+            text-align: center; /* Center align text */
+            padding: 8px; /* Padding for spacing */
+            border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 3px solid #4CAF50;
+        }
+
+        footer ul {
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Discover Nigeria</h1>
+    <nav>
+        <ul>
+            <li><a href="blog.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="blogpost.html">Blog</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="jj.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Gallery Section -->
+<section>
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://i.natgeofe.com/n/8322bcaf-d02f-4fed-890e-6e7f44b7e1c2/_45A9746_3x2.jpg">
+                <img src="https://i.natgeofe.com/n/8322bcaf-d02f-4fed-890e-6e7f44b7e1c2/_45A9746_3x2.jpg" alt="Cinque Terre">
+            </a>
+            <figcaption>Busy bus stop in Lagos</figcaption>
+        </figure>
+    </div>
+
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://miro.medium.com/v2/resize:fit:828/format:webp/1*IhBHUHFK2K8e670kNikhsg.jpeg">
+                <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*IhBHUHFK2K8e670kNikhsg.jpeg" alt="Forest">
+            </a>
+            <figcaption>Obudu Mountain Resort: A paradise in the clouds</figcaption>
+        </figure>
+    </div>
+
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://live.staticflickr.com/7142/6404276021_68104368a9_h.jpg">
+                <img src="https://live.staticflickr.com/7142/6404276021_68104368a9_h.jpg" alt="Northern Lights">
+            </a>
+            <figcaption>Aso Rock: The geological wonder of Abuja</figcaption>
+        </figure>
+    </div>
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://img.gistmania.com/newsimg/photos/mambila%20plateau.jpg">
+                <img src="https://img.gistmania.com/newsimg/photos/mambila%20plateau.jpg" alt="Mountains">
+            </a>
+            <figcaption>The scenic beauty of Mambila Plateau</figcaption>
+        </figure>
+    </div>
+
+</section>
+<section>
+    
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://cdn.businessday.ng/2023/09/Agodi-garden2_700x467-600x400.jpg">
+                <img src="https://cdn.businessday.ng/2023/09/Agodi-garden2_700x467-600x400.jpg" alt="Mountains">
+            </a>
+            <figcaption>Agodi Gardens: A lush oasis in Nigeria</figcaption>
+        </figure>
+    </div>
+
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://cdn.businessday.ng/2023/09/Mapo-Hall-1-700x393.jpg">
+                <img src="https://cdn.businessday.ng/2023/09/Mapo-Hall-1-700x393.jpg" alt="Mountains">
+            </a>
+            <figcaption>Mapo Hall: A historic landmark in Ibadan, Nigeria</figcaption>
+        </figure>
+    </div>
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://www.ancient-origins.net/sites/default/files/field/image/Idanre-Hill.jpg">
+                <img src="https://www.ancient-origins.net/sites/default/files/field/image/Idanre-Hill.jpg" alt="Mountains">
+            </a>
+            <figcaption>The breathtaking beauty of Idanre Hills</figcaption>
+        </figure>
+    </div>
+
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://www.cometonigeria.com/wp-content/uploads/2020/05/images-9-1.jpeg">
+                <img src="https://www.cometonigeria.com/wp-content/uploads/2020/05/images-9-1.jpeg" alt="Mountains">
+            </a>
+            <figcaption>The colorful Cave in  Southeastern Nigeria</figcaption>
+        </figure>
+    </div>
+</section>
+
+<section>
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://media.timbu.com/poi/959/kats-959-577308b8e8b0e.jpg">
+                <img src="https://media.timbu.com/poi/959/kats-959-577308b8e8b0e.jpg?w=132&h=132" alt="Mountains">
+            </a>
+            <figcaption>Katsina City skyline</figcaption>
+        </figure>
+    </div>
+
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://i0.wp.com/media.premiumtimesng.com/wp-content/files/2015/08/MataOrtizFONART8.jpg?w=800&ssl=1">
+                <img src="https://i0.wp.com/media.premiumtimesng.com/wp-content/files/2015/08/MataOrtizFONART8.jpg?w=800&ssl=1" alt="Mountains">
+            </a>
+            <figcaption>The traditional art of Mata Ortiz</figcaption>
+        </figure>
+    </div>
+
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://africa-energy-portal.org/sites/default/files/2020-09/Hydropower1.jpg">
+                <img src="https://africa-energy-portal.org/sites/default/files/2020-09/Hydropower1.jpg" alt="Mountains">
+            </a>
+            <figcaption>Hydropower generation in Nigeria</figcaption>
+        </figure>
+    </div>
+
+   
+</section>
+<section>
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://i.pinimg.com/originals/47/e4/67/47e4675e3fe98ac52adc810e9524f506.jpg">
+                <img src="https://i.pinimg.com/originals/47/e4/67/47e4675e3fe98ac52adc810e9524f506.jpg" alt="Mountains">
+            </a>
+            <figcaption>Masa and vegetable soup</figcaption>
+        </figure>
+    </div>
+
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://i.pinimg.com/originals/e1/41/5a/e1415ab686c36c8f26c1601fc813a53f.jpg">
+                <img src="https://i.pinimg.com/originals/e1/41/5a/e1415ab686c36c8f26c1601fc813a53f.jpg" alt="Mountains">
+            </a>
+            <figcaption>Yankari Game Reserve: Wildlife sanctuary in Bauchi State</figcaption>
+        </figure>
+    </div>
+    
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://zenaskitchen.com/wp-content/uploads/2022/12/jollof-rice-768x768.jpg">
+                <img src="https://zenaskitchen.com/wp-content/uploads/2022/12/jollof-rice-768x768.jpg" alt="Mountains">
+            </a>
+            <figcaption>The famous Nigerian Jollof Rice</figcaption>
+        </figure>
+    </div>
+
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://i.pinimg.com/originals/cf/7e/34/cf7e34bdcc0d5a815e3527443944ff46.jpg">
+                <img src="https://i.pinimg.com/originals/cf/7e/34/cf7e34bdcc0d5a815e3527443944ff46.jpg" alt="Mountains">
+            </a>
+            <figcaption>Obudu Mountain Resort: A paradise in the clouds</figcaption>
+        </figure>
+    </div>
+</section>
+<section>
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://netstorage-legit.akamaized.net/images/vllkyt3guph6krhajg.jpg?imwidth=720">
+                <img src="https://netstorage-legit.akamaized.net/images/vllkyt3guph6krhajg.jpg?imwidth=720" alt="Mountains">
+            </a>
+            <figcaption>The traditional Hausa wedding attire</figcaption>
+        </figure>
+    </div>
+
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://sunika.co.za/images/Maroon_Igbo_Traditional_Dress.jpg">
+                <img src="https://sunika.co.za/images/Maroon_Igbo_Traditional_Dress.jpg" alt="Mountains">
+            </a>
+            <figcaption>The elegance of Maroon Edo Traditional Dress</figcaption>
+        </figure>
+    </div>
+
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://www.bellanaijaweddings.com/wp-content/uploads/2023/09/Photo-Kulture-Igbo-Beauty-Look-3.jpg">
+                <img src="https://www.bellanaijaweddings.com/wp-content/uploads/2023/09/Photo-Kulture-Igbo-Beauty-Look-3.jpg" alt="Mountains">
+            </a>
+            <figcaption>An enchanting Igbo beauty look</figcaption>
+        </figure>
+    </div>
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://i.pinimg.com/originals/09/3e/c5/093ec50e06cfaea258cacf7ee37ccae5.jpg">
+                <img src="https://i.pinimg.com/originals/09/3e/c5/093ec50e06cfaea258cacf7ee37ccae5.jpg" alt="Mountains">
+            </a>
+            <figcaption>The vibrant Dressing of a Nigerian Couple</figcaption>
+        </figure>
+    </div>
+</section>
+<section>
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://i.pinimg.com/564x/65/bc/3a/65bc3a8b9d0a18847d427d4ef14a7a72.jpg">
+                <img src="https://i.pinimg.com/564x/65/bc/3a/65bc3a8b9d0a18847d427d4ef14a7a72.jpg" alt="Mountains">
+            </a>
+            <figcaption>The exquisite beauty of Nigerian Fulani Bride</figcaption>
+        </figure>
+    </div>
+
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://www.bellanaijaweddings.com/wp-content/uploads/2020/04/Edidem-Teleola-Trad-White-BellaNaija-Weddings.097.jpg">
+                <img src="https://www.bellanaijaweddings.com/wp-content/uploads/2020/04/Edidem-Teleola-Trad-White-BellaNaija-Weddings.097.jpg" alt="Mountains">
+            </a>
+            <figcaption>A beautiful traditional wedding ceremony outit</figcaption>
+        </figure>
+    </div>
+
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://i.pinimg.com/originals/bb/98/15/bb98155f148deff69b4993a5bec30a3f.jpg">
+                <img src="https://i.pinimg.com/originals/bb/98/15/bb98155f148deff69b4993a5bec30a3f.jpg" alt="Mountains">
+            </a>
+            <figcaption>The elegant dress in from the north</figcaption>
+        </figure>
+    </div>
+    <div class="gallery">
+        <figure>
+            <a target="_blank" href="https://netstorage-legit.akamaized.net/images/vllkyt1ldip4dl2jng.jpg?imwidth=900">
+                <img src="https://netstorage-legit.akamaized.net/images/vllkyt1ldip4dl2jng.jpg?imwidth=900" alt="Mountains">
+            </a>
+            <figcaption>The vibrant colors of Yoruba traditional attire</figcaption>
+        </figure>
+    </div>
+</section>
+
+<footer>
+    <!-- Contact details and social media links -->
+    <ul>
+        <li><a href="https://facebook.com/yourprofile"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://instagram.com/esta_o.a"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+    <p>© 2024 Waka Waka Padi. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

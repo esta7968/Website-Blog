@@ -1,0 +1,1 @@
+An interactive and flexible travel blog website. The website's goal is to promote holiday experiences while also serving as a forum for cooperation and conversation, with an emphasis on engaging both the owner and the public. The primary features include interactive design, content exploration, a contact page for queries, and support for a wide range of user roles.
